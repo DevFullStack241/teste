@@ -24,8 +24,8 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
 document.getElementById('cropBtn').addEventListener('click', function() {
     if (cropper) {
         const canvas = cropper.getCroppedCanvas({
-            width: 100,
-            height: 100,
+            width: 30,
+            height: 30,
         });
         document.getElementById('croppedImage').src = canvas.toDataURL('image/png');
         document.getElementById('cropContainer').style.display = 'none';
