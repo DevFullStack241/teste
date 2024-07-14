@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Upload and Crop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="image-upload" id="imageUploadContainer">
+            <img id="background" src="bg.jpg" alt="Background">
+            <div class="circle">
+                <img id="croppedImage" src="#" alt="Your Photo">
+            </div>
+            <label for="fileInput" class="file-label">Upload your photo</label>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+        <div class="crop-container" id="cropContainer">
+            <img id="imageToCrop" src="#" alt="Image to Crop">
+            <button id="cropBtn" class="crop-btn">Crop</button>
+        </div>
+        <div class="name-container">
+            <input type="text" id="nameInput" placeholder="Enter your name">
+        </div>
+        <button id="downloadBtn" class="download-btn">Download Image</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
